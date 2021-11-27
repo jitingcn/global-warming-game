@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GlobalWarmingSimulator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <%#= "
+        <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '');
+    </script>
+        " %>
+
+  </head>
+
+  <body>
+    <%= render "shared/flash" %>
+    <%= yield %>
+  </body>
+</html>
