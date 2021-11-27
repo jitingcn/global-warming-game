@@ -20,7 +20,7 @@ class UserResource < Madmin::Resource
   attribute :locked_at
   attribute :created_at, form: false
   attribute :updated_at, form: false
-
+  attribute :admin
   # Associations
 
   # Uncomment this to customize the display name of records in the admin area.
