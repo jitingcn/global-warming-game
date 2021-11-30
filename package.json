@@ -31,12 +31,12 @@
     "vite-plugin-full-reload": "^0.2.2",
     "vite-plugin-stimulus-hmr": "^1.0.2",
     "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "vite": "^2.6.13",
+    "vite-plugin-ruby": "^3.0.3"
   },
   "version": "0.1.0",
   "devDependencies": {
-    "vite": "^2.6.13",
-    "vite-plugin-ruby": "^3.0.3",
     "webpack-dev-server": "^3"
   }
 }
