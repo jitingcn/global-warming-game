@@ -58,6 +58,8 @@ gem "stimulus_reflex", github: "stimulusreflex/stimulus_reflex", tag: "v3.5.0.pr
 
 gem "hotwire-rails", "~> 0.1.3"
 
+gem "turbo-rails", "~> 0.9"
+
 gem "view_component", "~> 2.45"
 
 gem "devise", "~> 4.8"

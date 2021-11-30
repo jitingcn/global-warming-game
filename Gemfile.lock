@@ -241,7 +241,7 @@ GEM
     thor (1.1.0)
     thread-local (1.1.0)
     tilt (2.0.10)
-    turbo-rails (7.1.1)
+    turbo-rails (0.9.0)
       rails (>= 6.0.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
@@ -308,6 +308,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   stimulus_reflex!
+  turbo-rails (~> 0.9)
   turbolinks (~> 5)
   tzinfo-data
   view_component (~> 2.45)
