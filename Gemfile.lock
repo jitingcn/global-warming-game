@@ -15,6 +15,18 @@ GIT
       pagy (>= 3.5, < 5.0)
       rails (>= 6.0.3)
 
+GIT
+  remote: https://github.com/stimulusreflex/stimulus_reflex.git
+  revision: 869ecae67fdafd11d3136195158848daccfef0c3
+  tag: v3.5.0.pre8
+  specs:
+    stimulus_reflex (3.5.0.pre8)
+      cable_ready (= 5.0.0.pre8)
+      nokogiri
+      rack
+      rails (>= 5.2)
+      redis
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -84,7 +96,7 @@ GEM
     bootsnap (1.9.3)
       msgpack (~> 1.0)
     builder (3.2.4)
-    cable_ready (4.5.0)
+    cable_ready (5.0.0.pre8)
       rails (>= 5.2)
       thread-local (>= 1.1.0)
     capybara (3.36.0)
@@ -96,6 +108,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    chartkick (4.1.2)
     childprocess (4.1.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
@@ -108,6 +121,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dry-cli (0.7.0)
     erubi (1.10.0)
     ffi (1.15.4)
     globalid (1.0.0)
@@ -224,12 +238,6 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (0.7.3)
       rails (>= 6.0.0)
-    stimulus_reflex (3.4.1)
-      cable_ready (>= 4.5)
-      nokogiri
-      rack
-      rails (>= 5.2)
-      redis
     thor (1.1.0)
     thread-local (1.1.0)
     tilt (2.0.10)
@@ -243,6 +251,13 @@ GEM
     view_component (2.45.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
+    vite_rails (3.0.1)
+      railties (>= 5.1, < 8)
+      vite_ruby (~> 3.0)
+    vite_ruby (3.0.2)
+      dry-cli (~> 0.7.0)
+      rack-proxy (~> 0.6, >= 0.6.1)
+      zeitwerk (~> 2.2)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
@@ -272,6 +287,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   capybara (>= 3.26)
+  chartkick (~> 4.1)
   debug
   devise (~> 4.8)
   hiredis
@@ -291,10 +307,11 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   spring
-  stimulus_reflex (~> 3.4)
+  stimulus_reflex!
   turbolinks (~> 5)
   tzinfo-data
   view_component (~> 2.45)
+  vite_rails (~> 3.0)
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)

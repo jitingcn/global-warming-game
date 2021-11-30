@@ -1,0 +1,16 @@
+<div class="max-w-5xl">
+  <div>Choose Country</div>
+  <% @countries.each do |country| %>
+    <div class="flex items-center">
+      <div class="w-1/2">
+        <%= country.name %>
+      </div>
+      <div class="w-1/2">
+        <%= country.description %>
+      </div>
+    </div>
+  <% end %>
+  <div class="text-xl">Game Rules</div>
+  <div>You need to make a series of decisions each turn to maintain food supply and national happiness, economic growth, educate the nation on environmental awareness, and reduce carbon emissions.</div>
+  <div>Different policies will have different effects, so choose wisely :)</div>
+</div>

@@ -1,3 +1,46 @@
-<div class="">
+<h1 class="text-3xl my-2">Global Warming Simulator</h1>
+<div class="grid gap-10 max-w-5xl">
+  <div class="flex flex-col">
+    <section class="text-lg text-center flex-col space-y-2">
+      <p>The whole world is getting warmer and warmer.</p>
+      <p>You will lead your country on a mission to achieve carbon neutrality by 2050.</p>
+      <p>Let's see what you can do to reduce the carbon emissions and keep country growing!</p>
+    </section>
+    <%= link_to "Play", new_game_path,
+                  class: "mt-5 p-2 w-28 h-14 ring-2 rounded text-2xl self-center text-center", form_class: "self-center text-center" %>
+  </div>
 
+  <div>
+    <div class="text-xl">Game Rules</div>
+    <div>You need to make a series of decisions each turn to maintain food supply and national happiness, economic growth, educate the nation on environmental awareness, and reduce carbon emissions.</div>
+    <div>Different policies will have different effects, so choose wisely :)</div>
+  </div>
+
+  <div class="">
+    <div class="text-xl">Additional information</div>
+    <div class="text-lg my-2">What causes global warming</div>
+      In short, human activities (primarily the burning of fossil fuels) have fundamentally increased the concentration of greenhouse gases in Earth’s atmosphere, warming the planet.
+    <div class="text-lg my-2">Effects</div>
+    The most direct effect of global warming is climate change. Most of the effects are detrimental to human's productivity and living.
+    <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-y-3 gap-x-2 place-items-center">
+      <div class="text-center">Temperatures Rising</div>
+      <div class="w-36 object-cover">
+        <img alt="Because human-induced warming is superimposed on a naturally varying climate, the temperature rise has not been, and will not be, uniform or smooth across the country or over time." src="/assets/38.jpg">
+      </div>
+
+      <div class="text-center">More drought, lands desertification</div>
+      <div class="w-36 object-cover">
+        <img alt="Droughts in the Southwest and heat waves (periods of abnormally hot weather lasting days to weeks) everywhere are projected to become more intense, and cold waves less intense everywhere." src="/assets/492.jpg">
+      </div>
+      <div>Sea Level Rising</div>
+      <div class="w-36 object-cover">
+        <img alt="Global sea level has risen by about 8 inches since reliable record keeping began in 1880. It is projected to rise another 1 to 4 feet by 2100" src="/assets/495.jpg">
+      </div>
+      <div>Arctic ice reducing</div>
+      <div class="w-36 object-cover">
+        <img alt="The Arctic Ocean is expected to become essentially ice free in summer before mid-century." src="/assets/491.jpg">
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -54,7 +54,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "stimulus_reflex", "~> 3.4"
+gem "stimulus_reflex", github: "stimulusreflex/stimulus_reflex", tag: "v3.5.0.pre8"
 
 gem "hotwire-rails", "~> 0.1.3"
 
@@ -69,3 +69,7 @@ gem "paper_trail", "~> 12.1"
 gem "kredis", "~> 1.0"
 
 gem "madmin", github: "jitingcn/madmin", branch: "dev"
+
+gem "vite_rails", "~> 3.0"
+
+gem "chartkick", "~> 4.1"

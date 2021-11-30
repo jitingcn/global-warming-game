@@ -8,8 +8,8 @@
     <%= action_cable_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag 'application' %>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <%#= "
         <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
@@ -21,11 +21,13 @@
       gtag('config', '');
     </script>
         " %>
-
   </head>
 
-  <body>
+  <body class="bg-gray-100">
+    <%= render "shared/nav" %>
     <%= render "shared/flash" %>
-    <%= yield %>
+    <div role="main" class="mx-4 mt-2 grid place-items-center">
+      <%= yield %>
+    </div>
   </body>
 </html>
